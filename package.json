@@ -59,7 +59,7 @@
     "tmp": "0.2.3"
   },
   "devDependencies": {
-    "@types/node": "^22.14.1",
+    "@types/node": "^24.0.10",
     "@types/semver": "^7.3.9",
     "@types/tape": "^5.8.1",
     "@types/tmp": "^0.2.3",
