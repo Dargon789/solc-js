@@ -1,0 +1,29 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install solc globally
+        run: npm install -g solc
+
+      - name: Verify solc version
+        run: solc --version
+
+      - name: Run tests
+        run: npm test
