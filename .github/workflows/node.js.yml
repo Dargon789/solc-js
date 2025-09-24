@@ -20,12 +20,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          
+      - name: Install native solc
+        run: sudo apt-get update && sudo apt-get install -y solc
 
+      - name: Verify solc version
+        run: solc --version
+        
       - name: Install solc globally
         run: npm install -g solc
 
       - name: Verify solc version
-        run: solc --version
+        run: npx solcjs --version
 
       - name: Run tests
         run: npm test
