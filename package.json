@@ -71,7 +71,7 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^7.2.1",
-    "nyc": "^15.1.0",
+    "nyc": "^17.1.0",
     "tape": "^5.9.0",
     "tape-spawn": "^1.4.2",
     "ts-node": "^10.4.0",
